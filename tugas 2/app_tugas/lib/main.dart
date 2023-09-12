@@ -84,7 +84,7 @@ class MainApp extends StatelessWidget {
                 children: <Widget>[
                   Container( //konten 1
                     margin: EdgeInsets.only(top: 20, bottom: 10),
-                    height: 112,
+                    height: 135,
                     // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                     child: Stack(
                       children: <Widget>[
@@ -105,7 +105,7 @@ class MainApp extends StatelessWidget {
                           left: 50,
                           child: Container(
                             height: 20,
-                            width: 642,
+                            width: 322,
                             // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                             child: Row(
                               children: <Widget>[
@@ -124,18 +124,17 @@ class MainApp extends StatelessWidget {
                           top: 25,
                           left: 50,
                           child: Container(
-                            height: 54,
-                            width: 642,
+                            height: 80,
+                            width: 322,
                             // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                             child: Text("Halo semuanya, kenalin aku hadi. Aku baru gabung nih, temenan sama aku yuk. Saling follow ya, nanti aku langsung follback kok, tenang aja. Oh ya, aku terbuka di DM sama kalo ngebales tweet ini juga boleh. See u yaaaa", style: TextStyle(color: Colors.white),),
                           ),
                         ),
                         Positioned( //tombol like retweet komen
-                          top: 84,
+                          bottom: 0,
                           left: 50,
                           child: Container(
-                            height: 27,
-                            width: 642,
+                            width: 322,
                             // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -150,10 +149,10 @@ class MainApp extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Divider(color: Color.fromARGB(255, 57, 57, 57),),
+                  Divider(color: Color.fromARGB(255, 57, 57, 57)),
                   Container( //konten 2
-                    margin: EdgeInsets.only(top: 20, bottom: 10),
-                    height: 112,
+                    margin: EdgeInsets.only(top: 10, bottom: 10),
+                    height: 135,
                     // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                     child: Stack(
                       children: <Widget>[
@@ -174,7 +173,7 @@ class MainApp extends StatelessWidget {
                           left: 50,
                           child: Container(
                             height: 20,
-                            width: 642,
+                            width: 322,
                             // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                             child: Row(
                               children: <Widget>[
@@ -193,18 +192,17 @@ class MainApp extends StatelessWidget {
                           top: 25,
                           left: 50,
                           child: Container(
-                            height: 54,
-                            width: 642,
+                            height: 80,
+                            width: 322,
                             // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                             child: Text("Halo semuanya, kenalin aku hadi. Aku baru gabung nih, temenan sama aku yuk. Saling follow ya, nanti aku langsung follback kok, tenang aja. Oh ya, aku terbuka di DM sama kalo ngebales tweet ini juga boleh. See u yaaaa", style: TextStyle(color: Colors.white),),
                           ),
                         ),
                         Positioned( //tombol like retweet komen
-                          top: 84,
+                          bottom: 0,
                           left: 50,
                           child: Container(
-                            height: 27,
-                            width: 642,
+                            width: 322,
                             // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -219,10 +217,10 @@ class MainApp extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Divider(color: Color.fromARGB(255, 57, 57, 57),),
+                  Divider(color: Color.fromARGB(255, 57, 57, 57)),
                   Container( //konten 3
-                    margin: EdgeInsets.only(top: 20, bottom: 10),
-                    height: 112,
+                    margin: EdgeInsets.only(top: 10, bottom: 10),
+                    height: 135,
                     // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                     child: Stack(
                       children: <Widget>[
@@ -243,7 +241,7 @@ class MainApp extends StatelessWidget {
                           left: 50,
                           child: Container(
                             height: 20,
-                            width: 642,
+                            width: 322,
                             // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                             child: Row(
                               children: <Widget>[
@@ -262,18 +260,17 @@ class MainApp extends StatelessWidget {
                           top: 25,
                           left: 50,
                           child: Container(
-                            height: 54,
-                            width: 642,
+                            height: 80,
+                            width: 322,
                             // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                             child: Text("Halo semuanya, kenalin aku hadi. Aku baru gabung nih, temenan sama aku yuk. Saling follow ya, nanti aku langsung follback kok, tenang aja. Oh ya, aku terbuka di DM sama kalo ngebales tweet ini juga boleh. See u yaaaa", style: TextStyle(color: Colors.white),),
                           ),
                         ),
                         Positioned( //tombol like retweet komen
-                          top: 84,
+                          bottom: 0,
                           left: 50,
                           child: Container(
-                            height: 27,
-                            width: 642,
+                            width: 322,
                             // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -288,10 +285,10 @@ class MainApp extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Divider(color: Color.fromARGB(255, 57, 57, 57),),
+                  Divider(color: Color.fromARGB(255, 57, 57, 57)),
                   Container( //konten 4
-                    margin: EdgeInsets.only(top: 20, bottom: 10),
-                    height: 112,
+                    margin: EdgeInsets.only(top: 10, bottom: 10),
+                    height: 135,
                     // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                     child: Stack(
                       children: <Widget>[
@@ -312,7 +309,7 @@ class MainApp extends StatelessWidget {
                           left: 50,
                           child: Container(
                             height: 20,
-                            width: 642,
+                            width: 322,
                             // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                             child: Row(
                               children: <Widget>[
@@ -331,18 +328,17 @@ class MainApp extends StatelessWidget {
                           top: 25,
                           left: 50,
                           child: Container(
-                            height: 54,
-                            width: 642,
+                            height: 80,
+                            width: 322,
                             // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                             child: Text("Halo semuanya, kenalin aku hadi. Aku baru gabung nih, temenan sama aku yuk. Saling follow ya, nanti aku langsung follback kok, tenang aja. Oh ya, aku terbuka di DM sama kalo ngebales tweet ini juga boleh. See u yaaaa", style: TextStyle(color: Colors.white),),
                           ),
                         ),
                         Positioned( //tombol like retweet komen
-                          top: 84,
+                          bottom: 0,
                           left: 50,
                           child: Container(
-                            height: 27,
-                            width: 642,
+                            width: 322,
                             // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -357,10 +353,10 @@ class MainApp extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Divider(color: Color.fromARGB(255, 57, 57, 57),),
+                  Divider(color: Color.fromARGB(255, 57, 57, 57)),
                   Container( //konten 5
-                    margin: EdgeInsets.only(top: 20, bottom: 10),
-                    height: 112,
+                    margin: EdgeInsets.only(top: 10, bottom: 10),
+                    height: 135,
                     // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                     child: Stack(
                       children: <Widget>[
@@ -381,7 +377,7 @@ class MainApp extends StatelessWidget {
                           left: 50,
                           child: Container(
                             height: 20,
-                            width: 642,
+                            width: 322,
                             // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                             child: Row(
                               children: <Widget>[
@@ -400,18 +396,17 @@ class MainApp extends StatelessWidget {
                           top: 25,
                           left: 50,
                           child: Container(
-                            height: 54,
-                            width: 642,
+                            height: 80,
+                            width: 322,
                             // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                             child: Text("Halo semuanya, kenalin aku hadi. Aku baru gabung nih, temenan sama aku yuk. Saling follow ya, nanti aku langsung follback kok, tenang aja. Oh ya, aku terbuka di DM sama kalo ngebales tweet ini juga boleh. See u yaaaa", style: TextStyle(color: Colors.white),),
                           ),
                         ),
                         Positioned( //tombol like retweet komen
-                          top: 84,
+                          bottom: 0,
                           left: 50,
                           child: Container(
-                            height: 27,
-                            width: 642,
+                            width: 322,
                             // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -426,76 +421,7 @@ class MainApp extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Divider(color: Color.fromARGB(255, 57, 57, 57),),
-                  Container( //konten 6
-                    margin: EdgeInsets.only(top: 20, bottom: 10),
-                    height: 112,
-                    // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
-                    child: Stack(
-                      children: <Widget>[
-                        Positioned(
-                          top: 0,
-                          left: 0,
-                          child: Container(//logo akun
-                            padding: EdgeInsets.all(5),
-                            // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
-                            child: CircleAvatar(
-                              radius: 16.0,
-                              backgroundImage: AssetImage("assets/profil1.png"),
-                            ),
-                          ),
-                        ),
-                        Positioned( //nama akun
-                          top: 0,
-                          left: 50,
-                          child: Container(
-                            height: 20,
-                            width: 642,
-                            // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
-                            child: Row(
-                              children: <Widget>[
-                                Container( //nama biasa
-                                  child: Text("Hadi", style: TextStyle(color: Colors.white),),
-                                ),
-                                Container( //username
-                                  margin: EdgeInsets.only(left: 5),
-                                  child: Text("@hadiganteng", style: TextStyle(color: Colors.white.withOpacity(0.8), fontSize: 13),),
-                                )
-                              ],
-                            ),
-                          ),
-                        ),
-                        Positioned( //tweetnya
-                          top: 25,
-                          left: 50,
-                          child: Container(
-                            height: 54,
-                            width: 642,
-                            // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
-                            child: Text("Halo semuanya, kenalin aku hadi. Aku baru gabung nih, temenan sama aku yuk. Saling follow ya, nanti aku langsung follback kok, tenang aja. Oh ya, aku terbuka di DM sama kalo ngebales tweet ini juga boleh. See u yaaaa", style: TextStyle(color: Colors.white),),
-                          ),
-                        ),
-                        Positioned( //tombol like retweet komen
-                          top: 84,
-                          left: 50,
-                          child: Container(
-                            height: 27,
-                            width: 642,
-                            // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: <Widget>[
-                                Icon(Icons.comment, color: Colors.white.withOpacity(0.8), size: 20,),
-                                ImageIcon(AssetImage("assets/retweet.png"), size: 20, color: Colors.white.withOpacity(0.8),),
-                                Icon(Icons.favorite_outline, color: Colors.white.withOpacity(0.8), size: 20,)
-                              ],
-                            ),
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                ],
+                  ],
               ),
               )
             ],
