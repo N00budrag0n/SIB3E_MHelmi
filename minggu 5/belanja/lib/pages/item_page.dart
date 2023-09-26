@@ -9,13 +9,20 @@ class ItemPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Shopping List"),
+        title: Text("Item List"),
       ),
-      body: Center(
-        child: 
-          Text(
-            " ${item.name} with ${item.price}"
-          ),
+      body: Container(
+        child: Center(
+          child:
+            Column(
+              children: [
+                Text(
+                  " ${item.name} with ${item.price}"
+                ),
+                // Image(image: NetworkImage("${item.image}")),
+              ],
+            ),
+        ),
       ),
     );
 

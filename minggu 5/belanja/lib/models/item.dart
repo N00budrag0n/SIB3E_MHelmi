@@ -1,6 +1,9 @@
+import 'package:flutter/material.dart';
+
 class Item {
   String name;
   int price;
+  String image;
 
-  Item({required this.name, required   this.price});
+  Item({required this.name, required this.price, required this.image});
 }
