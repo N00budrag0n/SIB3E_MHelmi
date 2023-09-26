@@ -9,19 +9,30 @@ class ItemPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Item List"),
+        title: Text("Item Details"),
       ),
-      body: Container(
-        child: Center(
-          child:
-            Column(
-              children: [
-                Text(
-                  " ${item.name} with ${item.price}"
-                ),
-                // Image(image: NetworkImage("${item.image}")),
-              ],
+      body: Center(
+        child: Column(
+          children: [
+            Container(
+              width: 300,
+              height: 300,
+              decoration: BoxDecoration(),
+              child: Image.asset(item.image)
             ),
+            Container(
+              child: Text("${item.name}"),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 20),
+              child: Text("Harga: ${item.price}"),
+            ),
+            ElevatedButton(
+              onPressed: (){
+
+              }, child: Text("Beli Sekarang")
+            ),
+          ],
         ),
       ),
     );
