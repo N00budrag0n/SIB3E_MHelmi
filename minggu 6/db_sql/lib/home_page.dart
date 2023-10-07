@@ -23,6 +23,8 @@ class HomeState extends State<Home>{
   Widget build(BuildContext context){
     if(itemList == null){
       itemList = List.empty(growable: true);
+    } else {
+      updateListView();
     }
 
     return Scaffold(
@@ -87,7 +89,7 @@ class HomeState extends State<Home>{
             onTap: ()async {
             //TODO 3 Panggil Fungsi untuk Delete dari DB berdasarkan Item
               if (this.itemList[index] != null) {
-                  int result = await dbHelper.delete(this.itemList[index]);
+                  int result = await dbHelper.delete(this.itemList[index].id);
                   if (result > 0) {
                     updateListView();
                   }
@@ -97,6 +99,12 @@ class HomeState extends State<Home>{
           onTap: () async {
             var item = await navigateToEntryForm(context, this.itemList[index]);
             //TODO 4 Panggil Fungsi untuk Edit data
+            if(item != null){
+              int result = await dbHelper.update(item);
+                  if (result > 0) {
+                    updateListView();
+                  }
+            }
           },
           ),
         );

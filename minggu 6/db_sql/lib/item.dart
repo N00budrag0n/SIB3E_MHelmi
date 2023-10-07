@@ -10,7 +10,7 @@ class Item {
   String get name => this._name ?? '';
   set name(String value) => this._name = value;
 
-  get price => this._price ?? '1';
+  get price => this._price ?? 1;
   set price(value) => this._price = value;
 
   // konstruktor 1

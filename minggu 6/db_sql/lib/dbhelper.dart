@@ -47,14 +47,14 @@ class DbHelper {
     return mapList;
   }
 
-  // create db
+  // insert item
   Future<int> insert(Item object) async {
     Database? db = await this.database;
     int count = await db!.insert('item', object.toMap());
     return count;
   }
 
-  // update db
+  // update item
   Future<int> update(Item object) async {
     Database db = await this.initDb();
     int count = await db.update('item', object.toMap(),
@@ -63,7 +63,7 @@ class DbHelper {
     return count;
   }
 
-  // delete db
+  // delete item
   Future<int> delete(int id) async {
     Database db = await this.initDb();
     int count = await db.delete('item',
@@ -72,7 +72,7 @@ class DbHelper {
     return count;
   }
 
-  // get item db
+  // read table
   Future<List<Item>> getItemList() async {
     var itemMapList = await select();
     int count = itemMapList.length;
