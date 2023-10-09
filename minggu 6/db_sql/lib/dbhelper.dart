@@ -13,14 +13,20 @@ class DbHelper {
     //untuk menentukan nama database dan lokasi yg dibuat{
       Directory directory = await getApplicationDocumentsDirectory();
       String path = directory.path + 'item.db';
+      // delete if exist
+      // databaseFactory.deleteDatabase(path);
       //create, read databases
       var itemDatabase = openDatabase(path, version: 1, onCreate: _createDb);
       // _database = await openDatabase(path, version: 1, onCreate: _createDb);
     //mengembalikan nilai object sebagai hasil dari fungsinya
-    return itemDatabase;
-    
+    return itemDatabase; 
   }
-
+  Future<void> dropDb() async{
+    Directory directory = await getApplicationDocumentsDirectory();
+    String path = directory.path + 'item.db';
+    _database = null;
+    databaseFactory.deleteDatabase(path);
+  }
   // getter db
   Future<Database?> get database async {
     if (_database == null) {
@@ -35,7 +41,9 @@ class DbHelper {
     CREATE TABLE item (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       name TEXT,
-      price INTEGER
+      price INTEGER,
+      kodeBarang TEXT,
+      stok INTEGER
     )
     ''');
   }

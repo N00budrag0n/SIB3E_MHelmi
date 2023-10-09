@@ -1,6 +1,8 @@
 // import 'dart:html';
 // import 'dart:io';
 
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:sqflite/sqflite.dart';
 import 'dart:async';
@@ -18,9 +20,10 @@ class HomeState extends State<Home>{
   DbHelper dbHelper = DbHelper();
   int count = 0;
   var itemList = List.empty(growable: true);
-  
+
   @override
   Widget build(BuildContext context){
+
     if(itemList == null){
       itemList = List.empty(growable: true);
     } else {
@@ -34,6 +37,34 @@ class HomeState extends State<Home>{
       ),
       body: Column(children : [
         Expanded(child: createListView(),),
+        Stack(
+          children: [
+            Container(
+              alignment: Alignment.bottomLeft,
+              child: SizedBox(
+                child: ElevatedButton(
+                  child: Icon(Icons.replay),
+                  onPressed: () async{
+                    updateListView();
+                  },
+                ),
+              ),
+            ),
+            Container(
+              alignment: Alignment.bottomRight,
+              child: SizedBox(
+                child: ElevatedButton(
+                  child: Text('Mulai ulang'),
+                  onPressed: () async {
+                    dbHelper.dropDb();
+                    updateListView();
+                  },
+                ),
+              ),
+            ),
+          ],
+        ),
+        
         Container(
           alignment: Alignment.bottomCenter,
           child: SizedBox(
@@ -83,7 +114,7 @@ class HomeState extends State<Home>{
               child: Icon(Icons.ad_units),
             ),
           title: Text(this.itemList[index].name, ), //style: textStyle,
-          subtitle: Text(this.itemList[index].price.toString()),
+          subtitle: Text('Harga: ${this.itemList[index].price.toString()}, Stok: ${this.itemList[index].stok.toString()}, Kode: ${this.itemList[index].kodeBarang} '),
           trailing: GestureDetector(
             child: Icon(Icons.delete),
             onTap: ()async {
@@ -126,5 +157,4 @@ class HomeState extends State<Home>{
       });
     });
   }
-  
 }
