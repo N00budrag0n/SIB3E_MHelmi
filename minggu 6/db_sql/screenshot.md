@@ -8,3 +8,7 @@ screenshot nomor 1
 
 
 screenshot nomor 2
+
+![Screenshot_2023-10-09-11-26-45-606_com example db_sql](https://github.com/N00budrag0n/SIB3E_MHelmi/assets/91446476/17bcf411-45ab-456d-a9be-13917e8e5999)
+![Screenshot_2023-10-09-11-26-25-395_com example db_sql](https://github.com/N00budrag0n/SIB3E_MHelmi/assets/91446476/5118b19b-8179-46c1-ba12-4dd9d993c381)
+![Screenshot_2023-10-09-11-26-51-418_com example db_sql](https://github.com/N00budrag0n/SIB3E_MHelmi/assets/91446476/8fd74ef6-8b69-45f4-ac11-5c5648fa980a)
