@@ -54,7 +54,8 @@ class _MovieListState extends State<MovieList>{
               ),
               onTap: (){
                 MaterialPageRoute route = MaterialPageRoute(
-                  builder: (_) => MovieDetail(movie: movies![position])
+                  builder:  (_) => MovieDetail(movies![position])
+                  // builder: (_) => MovieDetail(movie: movies![position])
                 );
                 Navigator.push(context, route);
               },
